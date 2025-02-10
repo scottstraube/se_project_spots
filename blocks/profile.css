@@ -8,6 +8,7 @@
     margin-right: 20px;
     height: 190px;
     width: 190px;
+    border-radius: 8px;
 }
 
 .profile__column {
@@ -30,6 +31,7 @@
 
 .profile__description{
     margin: 0; 
+    color: rgba(21, 21, 21, 0.7);
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;
@@ -40,11 +42,42 @@
 
 .profile__edit-btn {
     margin-top: auto;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    color: rgba(21, 21, 21,);
+    opacity: 0.7;
+    gap: 8px;
+    display: flex;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.profile__edit-btn:hover {
+    opacity: 100%;
 }
 
 .profile__add-btn {
     margin-left: auto;
-    
+    width: 149px;
+    height: auto;
+    background-color: #212121;
+    color: #FCF5E5;
+    border-radius: 8px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    padding: 18px 32px 18px 32px;
+    gap: 8px;
+    display: flex;
+    align-self: flex-end;
+    white-space: nowrap;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.profile__add-btn:hover {
+        opacity: 80%;
 }
 
 @media screen and (max-width: 627px){
