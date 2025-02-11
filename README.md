@@ -14,7 +14,7 @@ The Spots site allows users to post images to their profile.
 
 ## Preview
 
-![alt text](Spots.gif)
+[GIF](https://photos.app.goo.gl/irxfYfS7KjnFXrDp6)
 
 ## Deployment
 
