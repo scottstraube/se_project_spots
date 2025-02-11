@@ -1,50 +1,50 @@
-
-
 .card__image {
-    height: 413px;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-    border-radius: 8px;
-    }
+  height: 413px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
 
-    .card__content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+.card__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    .card__title {
-        font-family: "Poppins", Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        font-weight: 500;
-        font-style: normal;
-        line-height: 1.2;
-        max-width: 353px;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
+.card__title {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.2;
+  max-width: 353px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 12px 0;
+}
 
-    .card__like-btn {
-        background-image: url(../images/heart.svg);
-        width: 23px;
-        height: 20px;
-        border: none;
-        background-color: transparent;
-        opacity: 40%;
-        transition: opacity 0.5s ease-in-out;
-    }
+.card__like-btn {
+  background-image: url(../images/heart.svg);
+  width: 23px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  opacity: 40%;
+  transition: opacity 0.5s ease-in-out;
+}
 
-    .card__like-btn:hover {
-        opacity: 100%;
-    }
+.card__like-btn:hover {
+  opacity: 100%;
+}
 
-    @media screen and (max-width: 627px){
-        .card__image {
-            height: 288px;
-        }
+@media screen and (max-width: 627px) {
+  .card__image {
+    height: 288px;
+  }
 
-
-
-    }
+  .card__title {
+    font-size: 16px;
+  }
+}
