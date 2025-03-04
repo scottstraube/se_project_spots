@@ -27,7 +27,7 @@
               Edit Profile
             </button>
           </div>
-          <button type="button" class="profile__add-btn">New Post</button>
+          <button type="button" class="post__add-btn">New Post</button>
         </section>
         <section class="cards page__section">
           <ul class="cards__list">
@@ -66,6 +66,35 @@
                   id="profile-desc-input"
                   class="modal__input"
                   placeholder="Describe yourself"
+                />
+              </label>
+              <button type="submit" class="modal__submit-btn">Save</button>
+            </form>
+          </div>
+        </div>
+        <div class="modal" id="add-card-modal">
+          <div class="modal__container">
+            <button type="button" class="modal__close-btn"></button>
+            <h2 class="modal__title">New post</h2>
+            <form name="add-card-form" class="modal__form" id="add-card-form">
+              <label for="add-card-link-input" class="modal__label"
+                >Image link
+                <input
+                  type="url"
+                  id="add-card-link-input"
+                  class="modal__input"
+                  placeholder="Place a link to the picture"
+                  name="link"
+                />
+              </label>
+              <label for="add-card-caption-input" class="modal__label"
+                >Caption
+                <input
+                  type="text"
+                  id="add-card-caption-input"
+                  class="modal__input"
+                  placeholder="Type your caption"
+                  name="caption"
                 />
               </label>
               <button type="submit" class="modal__submit-btn">Save</button>

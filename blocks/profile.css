@@ -84,7 +84,7 @@
   height: 14px;
   background-image: url(../images/plus.svg);
 }
-.profile__add-btn {
+.post__add-btn {
   margin-left: auto;
   height: auto;
   background-color: #212121;
