@@ -41,6 +41,32 @@
   opacity: 100%;
 }
 
+.card__like-btn_liked {
+  background-image: url(/images/like_icon_liked.svg);
+  opacity: 100%;
+}
+
+.card__like-btn_liked:hover {
+  background-image: url(/images/like_icon_liked-hover.svg);
+  opacity: 100%;
+}
+
+.card__delete-btn {
+  background: url(/images/delete-btn.svg) center no-repeat;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 32px;
+  width: 32px;
+  border-radius: 16px;
+  border: none;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 371px;
+}
+
+.card__delete-btn:hover {
+  background-color: rgba(255, 101, 101, 1);
+}
+
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
@@ -48,9 +74,14 @@
 
   .card__title {
     font-size: 16px;
+    max-width: 250px;
   }
 
   .card__content {
     max-width: 288px;
+  }
+
+  .card__delete-btn {
+    margin-left: 246px;
   }
 }

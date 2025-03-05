@@ -40,6 +40,9 @@ const cardList = document.querySelector(".cards__list");
 const cardModalBtn = document.querySelector(".post__add-btn");
 const cardModal = document.querySelector("#add-card-modal");
 const cardModalCloseBtn = cardModal.querySelector(".modal__close-btn");
+const addCardElement = cardModal.querySelector("#add-card-form");
+const cardImageLinkInput = cardModal.querySelector("#add-card-link-input");
+const cardCaptionInput = cardModal.querySelector("#add-card-caption-input");
 
 function getCardElement(data) {
   const cardElement = cardTemplate.content
@@ -47,10 +50,19 @@ function getCardElement(data) {
     .cloneNode(true);
   const cardNameEL = cardElement.querySelector(".card__title");
   const cardImgEl = cardElement.querySelector(".card__image");
+  const cardLikeBtn = cardElement.querySelector(".card__like-btn");
+  // select delete but
+  const cardDeleteBtn = cardElement.querySelector(".card__delete-btn");
 
   cardNameEL.textContent = data.name;
   cardImgEl.src = data.link;
   cardImgEl.alt = data.name;
+
+  cardLikeBtn.addEventListener("click", () =>
+    cardLikeBtn.classList.toggle("card__like-btn_liked")
+  );
+
+  cardDeleteBtn.addEventListener("click", () => cardElement.remove());
 
   return cardElement;
 }
@@ -68,6 +80,16 @@ function handleEditFormSubmit(evt) {
   profileName.textContent = editModalNameInput.value;
   profileDesc.textContent = editModalDescInput.value;
   closeModal(editModal);
+}
+
+function handleAddCardSubmit(evt) {
+  evt.preventDefault();
+  const inputValues = {
+    name: cardCaptionInput.value,
+    link: cardImageLinkInput.value,
+  };
+  const cardElement = getCardElement(inputValues);
+  cardList.prepend(cardElement);
 }
 
 profileEditButton.addEventListener("click", () => {
@@ -89,6 +111,8 @@ cardModalCloseBtn.addEventListener("click", () => {
 });
 
 editFormElement.addEventListener("submit", handleEditFormSubmit);
+
+addCardElement.addEventListener("submit", handleAddCardSubmit);
 
 initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
