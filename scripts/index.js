@@ -42,6 +42,7 @@ const editModalDescInput = editModal.querySelector("#profile-desc-input");
 const cardTemplate = document.querySelector("#card-template");
 const cardList = document.querySelector(".cards__list");
 
+const cardForm = document.querySelector(".modal__form_add_card");
 const cardModalBtn = document.querySelector(".profile__add-btn");
 const cardModal = document.querySelector("#add-card-modal");
 const cardModalCloseBtn = cardModal.querySelector(".modal__card-close-btn");
@@ -107,6 +108,8 @@ function handleAddCardSubmit(evt) {
   };
   const cardElement = getCardElement(inputValues);
   cardList.prepend(cardElement);
+  cardForm.reset();
+  closeModal(cardModal);
 }
 
 profileEditButton.addEventListener("click", () => {
@@ -118,8 +121,6 @@ profileEditButton.addEventListener("click", () => {
 profModalCloseBtn.addEventListener("click", () => {
   closeModal(editModal);
 });
-
-/* esc key and click outside modal also = close modal?*/
 
 cardModalBtn.addEventListener("click", () => {
   openModal(cardModal);
