@@ -36,15 +36,15 @@ const profileDesc = document.querySelector(".profile__description");
 
 const editModal = document.querySelector("#edit-modal");
 const editFormElement = editModal.querySelector(".modal__form");
-const closeModalButton = editModal.querySelector(".modal__close-btn");
+const profModalCloseBtn = editModal.querySelector(".modal__prof-close-btn");
 const editModalNameInput = editModal.querySelector("#profile-name-input");
 const editModalDescInput = editModal.querySelector("#profile-desc-input");
 const cardTemplate = document.querySelector("#card-template");
 const cardList = document.querySelector(".cards__list");
 
-const cardModalBtn = document.querySelector(".post__add-btn");
+const cardModalBtn = document.querySelector(".profile__add-btn");
 const cardModal = document.querySelector("#add-card-modal");
-const cardModalCloseBtn = cardModal.querySelector(".modal__close-btn");
+const cardModalCloseBtn = cardModal.querySelector(".modal__card-close-btn");
 const addCardElement = cardModal.querySelector("#add-card-form");
 const cardImageLinkInput = cardModal.querySelector("#add-card-link-input");
 const cardCaptionInput = cardModal.querySelector("#add-card-caption-input");
@@ -115,9 +115,11 @@ profileEditButton.addEventListener("click", () => {
   openModal(editModal);
 });
 
-closeModalButton.addEventListener("click", () => {
+profModalCloseBtn.addEventListener("click", () => {
   closeModal(editModal);
 });
+
+/* esc key and click outside modal also = close modal?*/
 
 cardModalBtn.addEventListener("click", () => {
   openModal(cardModal);
@@ -126,9 +128,6 @@ cardModalBtn.addEventListener("click", () => {
 cardModalCloseBtn.addEventListener("click", () => {
   closeModal(cardModal);
 });
-
-/*
- */
 
 closeImageBtn.addEventListener("click", () => {
   closeModal(imageModal);

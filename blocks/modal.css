@@ -44,6 +44,7 @@
   width: 40px;
   height: 40px;
   opacity: 40%;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .modal__close-btn:hover {
@@ -79,6 +80,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
+  transition: border-color 0.5s ease-in-out;
 }
 
 .modal__input:hover {
@@ -95,6 +97,7 @@
   font-size: 16px;
   color: rgba(252, 245, 229, 1);
   cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .modal__submit-btn:hover {
@@ -135,7 +138,6 @@
 
 .image__close-btn {
   background-image: url(/images/close-light.svg);
-
   background-repeat: no-repeat;
   height: 40px;
   width: 40px;
@@ -147,6 +149,12 @@
   right: -12.5px;
   margin: 0;
   padding: 0;
+  opacity: 100%;
+  transition: opacity 0.5s linear;
+}
+
+.image__close-btn:hover {
+  opacity: 40%;
 }
 
 @media screen and (max-width: 627px) {
