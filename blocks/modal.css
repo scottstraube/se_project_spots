@@ -136,7 +136,7 @@
   max-width: fit-content;
 }
 
-.image__close-btn {
+.modal__close-btn_type_preview {
   background-image: url(/images/close-light.svg);
   background-repeat: no-repeat;
   height: 40px;
@@ -153,7 +153,7 @@
   transition: opacity 0.5s linear;
 }
 
-.image__close-btn:hover {
+.modal__close-btn_type_preview:hover {
   opacity: 40%;
 }
 
@@ -202,7 +202,7 @@
     font-size: 16px;
   }
 
-  #preview-modal {
+  #modal-preview {
     background-color: rgba(0, 0, 0, 0.8);
   }
 }

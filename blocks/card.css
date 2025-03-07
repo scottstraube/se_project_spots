@@ -7,10 +7,6 @@
   cursor: pointer;
 }
 
-/*
-.card__image:hover {} - add image hover effect on desktop?
-*/
-
 .card__content {
   display: flex;
   align-items: center;
