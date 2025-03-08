@@ -205,4 +205,9 @@
   #modal-preview {
     background-color: rgba(0, 0, 0, 0.8);
   }
+
+  .modal__close-btn_type_preview {
+    top: -8px;
+    right: -16px;
+  }
 }
