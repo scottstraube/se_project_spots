@@ -162,7 +162,7 @@
 }
 
 .modal__close-btn_type_preview {
-  background-image: url(/images/close-light.svg);
+  background-image: url(../images/close-light.svg);
   background-repeat: no-repeat;
   height: 40px;
   width: 40px;
@@ -235,4 +235,63 @@
     top: -8px;
     right: -16px;
   }
+}
+
+.modal__title-delete {
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.modal__delete-cont {
+  display: flex;
+  gap: 20px;
+}
+
+.modal__delete-btn {
+  background: rgba(255, 101, 101, 1);
+  border: none;
+  color: black;
+}
+
+.modal__cancel-btn {
+  background: none;
+  color: black;
+}
+
+.modal__close-btn_type_delete {
+  background-image: url(../images/close-light.svg);
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  top: 0px;
+  right: -40px;
+  margin: 0;
+  padding: 0;
+  opacity: 100%;
+  transition: opacity 0.5s linear;
+  position: absolute;
+}
+
+#delete-modal {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal__content-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__contents {
+  position: relative;
 }
