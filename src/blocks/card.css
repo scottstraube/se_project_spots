@@ -43,19 +43,19 @@
 }
 
 .card__like-btn_liked {
-  background-image: url(/images/like_icon_liked.svg);
+  background-image: url(../images/like_icon_liked.svg);
   opacity: 100%;
 }
 
 .card__like-btn_liked:hover {
-  background-image: url(/images/like_icon_liked-hover.svg);
+  background-image: url(../images/like_icon_liked-hover.svg);
   opacity: 100%;
 }
 
 /* hide delete buttons until image:hover on desktop?*/
 
 .card__delete-btn {
-  background: url(/images/delete-btn.svg) center no-repeat;
+  background: url(../images/delete-btn.svg) center no-repeat;
   background-color: rgba(0, 0, 0, 0.3);
   height: 32px;
   width: 32px;
